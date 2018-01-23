@@ -79,9 +79,9 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Welcome every one!!
+                  Contact Me
                 </div>
-                <p>This is the begining of my Laravel Journey</p>
+                <p>I would like to chat. Email me at berzer773@gmail.com</p>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
