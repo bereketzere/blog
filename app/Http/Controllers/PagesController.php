@@ -13,7 +13,22 @@ class PagesController extends Controller {
         # pass that data to the correct view
   }
   public function getAbout(){
-      return view('pages.about');
+        $first='Bereket';
+        $last='Keleta';
+        $fullname=$first." ".$last;
+        $email='berzer773@gmail.com';
+        $data=[];
+        $data['email']=$email;
+        $data['fullname']=$fullname;
+
+        //return view('pages.about');
+          //  return view('pages.about')->with("fullname",$full);
+      //  return view('pages.about')->with("fullname",$fullname);
+      //passing oone variable  return view('pages.about')->withFullname($fullname);
+        //to pass multiple variable
+        // return view('pages.about')->withFullname($fullname)->withEmail($email);
+        // to pass an array
+      return view('pages.about')->withData($data);
   }
   public function getContact(){
       return view('pages.contact');
