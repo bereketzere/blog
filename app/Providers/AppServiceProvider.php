@@ -4,7 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
-
+/*use Illuminate\Support\Facades\Schema; to have unlimited char**/
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -15,6 +15,8 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Schema::defaultStringLength(191);
+        /*use Schema::defaultStringLength(191); to have unlimited char**/
+
     }
 
     /**
