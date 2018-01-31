@@ -18,8 +18,8 @@ class PagesController extends Controller {
         $fullname=$first." ".$last;
         $email='berzer773@gmail.com';
         $data=[];
-        $data['email']=$email;
-        $data['fullname']=$fullname;
+        $data['email']= $email;
+        $data['fullname']= $fullname;
 
         //return view('pages.about');
           //  return view('pages.about')->with("fullname",$full);
